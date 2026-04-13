@@ -1,0 +1,84 @@
+ <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* ===== TITULO ===== */
+        .titulo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* ===== TABLA ===== */
+        .inventory {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .inventory thead {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        .inventory th {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .inventory td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .inventory tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* PRECIO */
+        .precio {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* EXISTENCIA */
+        .existencia {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* IMAGEN */
+        .inventory img {
+            width: 70px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        /* ===== FORMATO PDF ===== */
+        @media print {
+            body {
+                padding: 0;
+                font-size: 11px;
+            }
+
+            .inventory thead {
+                background-color: #000 !important;
+                color: #fff !important;
+            }
+
+            .inventory tbody tr:hover {
+                background-color: transparent;
+            }
+        }
+    </style>
