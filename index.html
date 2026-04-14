@@ -6,11 +6,8 @@
 		<link rel="stylesheet" href="https://wesjapan2021.github.io/WES_JAPAN_CATALOGO_COMPLETO/style.css">
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 	</head>
-
 <body>
-
 <div class="titulo">CATÁLOGO DE PRODUCTOS WES JAPAN</div>
-
 <table class="inventory">
     <thead>
         <tr>
@@ -21,21 +18,19 @@
             <th>IMAGEN</th>
         </tr>
     </thead>
-
-    <tbody>
-        &lt;&lt;Start: ORDERBY(FILTER("PRODUCTOS", [EXISTENCIAS] &gt; 0), [DESCRIPCION])&gt;&gt;
+<p> &lt;&lt;START: FILTER("Existencias HOY Sin Ofertas Sin Fajas")&gt;&gt;
+    <tbody>        
         <tr>
             <td>&lt;&lt;[CODIGO]&gt;&gt;</td>
-            <td>&lt;&lt;[DESCRIPCION]&gt;&gt;</td>
-            <td class="precio">Q &lt;&lt;TEXT([PRECIO], "#,##0.00")&gt;&gt;</td>
-            <td class="existencia">&lt;&lt;[EXISTENCIAS]&gt;&gt;</td>
+            <td>&lt;&lt;[DESCRIPCION CATALOGO WES]&gt;&gt;</td>
+            <td class="precio">Q &lt;&lt;[PRECIO]&gt;&gt;</td>
+            <td class="existencia">&lt;&lt;[STOCK]&gt;&gt;</td>
             <td>
-                <img src="&lt;&lt;[IMAGEN]&gt;&gt;" />
+                <img src="&lt;&lt;[IMAGEN]&gt;&gt;"/>
             </td>
         </tr>
-        &lt;&lt;End&gt;&gt;
+        &lt;&lt;END&gt;&gt; </p>
     </tbody>
 </table>
-
 </body>
 </html>
